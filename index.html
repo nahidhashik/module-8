@@ -7,8 +7,57 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Responsive css</title>
+
+   <style>
+.flex-box{
+    display: flex;
+
+   /* float: right; */
+    justify-content: center;
+    align-items: stretch;
+    width: 1500px;
+    height: 500px;
+    background-color: yellow;
+    border: 5px dotted red;
+}
+
+.div-1{
+
+    border: 5x solid red;
+    width: 100px;
+    /* height: 100px; */
+    margin: 5px;
+    padding: 5px;
+    background-color: aquamarine;
+    font-size: 2em;
+
+    order: 2;
+  /* overflow: hidden; */
+
+}
+
+#boxxx{
+
+    flex-grow: 2;
+    order: 1;
+
+
+
+
+}
+   </style>
+
 </head>
 <body>
+
+   <container class="flex-box">
+
+    <div class="div-1">box-1</div>
+    <div id="boxxx" class="div-1">box-2</div>
+    <!-- <div class="div-1">box-3</div> -->
+
+   </container>
+
     
 </body>
 </html>
